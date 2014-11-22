@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: home
 title: GPSHandle.com
-tagline: Supporting tagline
+tagline: Powerful Fleet Management System
 ---
 {% include JB/setup %}
 

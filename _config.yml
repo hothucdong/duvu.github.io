@@ -11,10 +11,10 @@ markdown: kramdown
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap-3
-tagline: Site Tagline
+title : Powerful Fleet Management System
+tagline: 
 author :
-  name : Vu Du
+  name : gpshandle.com
   email : vu@umaps.vn
   github : duvu 
   twitter : duvu
