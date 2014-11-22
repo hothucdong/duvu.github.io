@@ -74,4 +74,8 @@
   background-size: cover;
   height: 800px;
 }
+.site-footer a{
+  color: inherit;
+  transition: color .25s;
+}
 body { padding-top: 70px; }
