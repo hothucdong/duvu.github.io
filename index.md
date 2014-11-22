@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: GPSHandle.com
 tagline: Powerful Fleet Management System
 ---
