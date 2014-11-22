@@ -13,6 +13,7 @@
   min-height: 30px;
 }
 
+
 /* posts index */
 .post > h3.title {
   position: relative;
@@ -73,6 +74,10 @@
 }
 .topbar.navbar{
   height: 30px;
+}
+.topbar a.navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .site-header li a{
   text-transform: uppercase;
