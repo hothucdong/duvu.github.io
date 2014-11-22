@@ -64,10 +64,6 @@
   border: 1px solid #4c964d;
   color: #FFF; }
 
-  header.front-page-header .banner{
-    height: 600px;
-    width: 100%;
-    position: relative;
-    margin-top: -100px;
-    background: url("/images/landscape.jpg") no-repeat center center fixed;
-  }
+.nw{
+  white-space: nowrap;
+}
