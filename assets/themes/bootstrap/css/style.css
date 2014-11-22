@@ -81,4 +81,7 @@
 .site-footer a:hover{
   text-decoration:none
 }
+a{
+  color: #00b4ff;
+}
 body { padding-top: 70px; }
