@@ -69,5 +69,5 @@
     width: 100%;
     position: relative;
     margin-top: -100px;
-    background: url("images/landscape.jpg") no-repeat center center fixed;
+    background: url("../images/landscape.jpg") no-repeat center center fixed;
   }
