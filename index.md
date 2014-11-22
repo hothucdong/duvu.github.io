@@ -3,6 +3,14 @@ layout: default
 title: GPSHandle.com
 tagline: Powerful Fleet Management System
 ---
+
+| Less than 100 devices  |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+
+
 {% include JB/setup %}
 
 Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
