@@ -80,7 +80,11 @@
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
+.topbar span.badge{
+  width: 18px;
+  height: 18px;
+  background-color: #00b4ff;
+}
 .site-header li a{
   text-transform: uppercase;
 }
