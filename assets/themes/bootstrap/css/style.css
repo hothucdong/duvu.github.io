@@ -11,6 +11,9 @@
 
 .navbar {
   min-height: 30px;
+  border-left:0px;
+  border-right: 0px;
+  border-radius: 0px;
 }
 
 
