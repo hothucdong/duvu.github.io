@@ -96,7 +96,6 @@
 .site-footer{
   padding-top: 0px;
   color: rgba(0, 0, 0, .6);
-  background: gray url("/images/calgary-skyline.jpg") no-repeat top center;
   background-size: cover;
   height: 490px;
 }
