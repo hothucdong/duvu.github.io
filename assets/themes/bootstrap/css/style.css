@@ -75,10 +75,12 @@
 .topbar.navbar{
   height: 30px;
 }
-.topbar a.navbar-brand {
+.topbar a.navbar-brand,
+.topbar li a {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 .site-header li a{
   text-transform: uppercase;
 }
