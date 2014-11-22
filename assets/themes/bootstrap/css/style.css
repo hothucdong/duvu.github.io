@@ -103,7 +103,7 @@
   height: 490px;
 }
 .site-footer a{
-  color:inherit;
+  color:#FFFFFF;
   -webkit-transition:color .25s;
   transition:color .25s
 }
