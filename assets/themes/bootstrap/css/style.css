@@ -67,7 +67,7 @@
 .nw{
   white-space: nowrap;
 }
-.site-header.navbar li a{
+.site-header li a{
   text-transform: uppercase;
 }
 .site-footer{
