@@ -7,8 +7,11 @@
   margin: 30px 0; }
 
 .navbar .nav {
-  float: right;
-  min-height: 30px; }
+  float: right;}
+
+.navbar {
+  min-height: 30px;
+}
 
 /* posts index */
 .post > h3.title {
