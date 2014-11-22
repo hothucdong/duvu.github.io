@@ -67,6 +67,9 @@
 .nw{
   white-space: nowrap;
 }
+.topbar.navbar{
+  height: 30px;
+}
 .site-header li a{
   text-transform: uppercase;
 }
