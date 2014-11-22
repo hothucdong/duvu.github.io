@@ -79,6 +79,7 @@
 .topbar li a {
     padding-top: 5px;
     padding-bottom: 5px;
+    text-transform:  none!important;
 }
 .topbar span.badge{
   width: 18px;
