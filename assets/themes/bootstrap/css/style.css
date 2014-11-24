@@ -107,6 +107,10 @@
   -webkit-transition:color .25s;
   transition:color .25s
 }
+.site-footer ul {
+  padding: 0px;
+  list-style: none;
+}
 .site-footer a:hover{
   color: #00b4ff;
   text-decoration:none
