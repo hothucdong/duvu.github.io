@@ -112,7 +112,7 @@
   -webkit-transition: background-color .25s;
 }
 .mainMenu:hover{
-  background-color: red;
+  background-color: #00aff0;
   color: #FFFFFF;
 }
 footer ul {
