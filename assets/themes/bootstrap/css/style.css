@@ -112,7 +112,7 @@
 }
 .nav .mainMenu a:hover,
 .nav .mainMenu a:focus,
-.nav .mainMenu a:active
+.nav .mainMenu .active
 {
   background-color: #00aff0;
   color: #FFFFFF;
