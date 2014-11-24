@@ -110,6 +110,9 @@
   transition: background-color .25s;
   -webkit-transition: background-color .25s;
 }
+nav.navbar.navbar-mainNav{
+  border-top: 0px;
+}
 .nav .mainMenu a:hover,
 .nav .mainMenu a:focus,
 .nav .mainMenu .active
