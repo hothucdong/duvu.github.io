@@ -110,7 +110,10 @@
   transition: background-color .25s;
   -webkit-transition: background-color .25s;
 }
-.nav .mainMenu a:hover{
+.nav .mainMenu a:hover
+.nav .mainMenu a:focus
+.nav .mainMenu a:active
+{
   background-color: #00aff0;
   color: #FFFFFF;
 }
