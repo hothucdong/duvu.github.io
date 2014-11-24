@@ -15,6 +15,10 @@
   border-right: 0px;
   border-radius: 0px;
 }
+.navbar .navbar-mainNav{
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
 
 
 /* posts index */
