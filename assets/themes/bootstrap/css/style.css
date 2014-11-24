@@ -15,11 +15,6 @@
   border-right: 0px;
   border-radius: 0px;
 }
-.navbar .navbar-mainNav{
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
-}
-
 
 /* posts index */
 .post > h3.title {
@@ -115,7 +110,7 @@
   transition: background-color .25s;
   -webkit-transition: background-color .25s;
 }
-.mainMenu:hover{
+.mainMenu:hover a{
   background-color: #00aff0;
   color: #FFFFFF;
 }
