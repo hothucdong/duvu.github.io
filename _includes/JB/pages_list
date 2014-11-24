@@ -26,7 +26,7 @@ Usage:
   {% for node in pages_list %}
     {% if node.title != null %}
       {% if group == null or group == node.group %}
-          {% if lclass == null %}
+          {% if mclass == null %}
                 	{% if page.url == node.url %}
                 	   <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
                 	{% else %}
@@ -34,9 +34,9 @@ Usage:
                 	{% endif %}
           {% else %}
                   {% if page.url == node.url %}
-                     <li class="active mainMenu"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
+                     <li class="active {{mclass}}"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
                   {% else %}
-                     <li class="mainMenu"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+                     <li class="{{mclass}}"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
                   {% endif %}
           {% endif %}
       {% endif %}
@@ -45,3 +45,4 @@ Usage:
 {% endif %}
 {% assign pages_list = nil %}
 {% assign group = nil %}
+{% assign mclass = nil %}
