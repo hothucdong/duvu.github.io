@@ -108,7 +108,12 @@
   transition:color .25s
 }
 .mainMenu{
-  
+  transition: background-color .25s;
+  -webkit-transition: background-color .25s;
+}
+.mainMenu:hover{
+  background-color: red;
+  color: #FFFFFF;
 }
 footer ul {
   padding: 0px;
