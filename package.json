@@ -1,0 +1,38 @@
+{
+  "name": "umaps-guide",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^1.7.1",
+    "browserify": "^6.3.3",
+    "browserify-shim": "^3.8.0",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-browserify": "^0.5.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.4.2",
+    "gulp-notify": "^2.0.1",
+    "gulp-plumber": "^0.6.6",
+    "gulp-ruby-sass": "^0.7.1"
+  },
+  "browser": {
+    "modernizr": "./_bower_components/modernizr/modernizr.js",
+    "jquery": "./_bower_components/jquery/dist/jquery.js",
+    "foundation": "./_bower_components/foundation/js/foundation.js"
+  },
+  "browserify-shim": {
+    "modernizr": "Modernizr",
+    "jquery": "$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}

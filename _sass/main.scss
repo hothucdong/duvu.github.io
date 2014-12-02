@@ -1,0 +1,52 @@
+@font-face {
+	font-family: "Futura";
+	src: "../fonts/VNF-Futura.ttf"
+}
+
+@font-face {
+	font-family: "Helvetica Neue";
+	src: "../fonts/Helvetica Neue LT Std/HelveticaNeueLTStd-Md.otf";
+	font-style: "normal"
+}
+
+
+$body-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$global-radius: 2px !default;
+
+//color
+$primary-color: #14acf7;
+$secondary-color: #e7e7e7;
+$alert-color: #db423d;
+$success-color: #88dd0e;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+$dark: #202528;
+$asphalt: #283239;
+
+$header-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$topbar-bg-color: $dark !default;
+$topbar-bg: $topbar-bg-color !default;
+
+$topbar-height: 50px !default;
+$topbar-margin-bottom: 0 !default;
+
+$topbar-link-bg-hover: $asphalt !default;
+$topbar-link-bg-color-hover: $asphalt !default;
+$topbar-link-bg-active: $asphalt !default;
+$topbar-link-bg-active-hover: scale-color($topbar-link-bg-active, $lightness: 14%) !default;
+
+$button-border-width: 1px;
+
+
+@import 'foundation';
+
+body {
+	background: $asphalt;
+}
+
+.hero-image {
+	width: 100%;
+	height: 100vh;
+}
