@@ -1,0 +1,195 @@
+@font-face {
+	font-family: "Futura";
+	src: "../fonts/VNF-Futura.ttf"
+}
+
+@font-face {
+	font-family: "Helvetica Neue";
+	src: "../fonts/Helvetica Neue LT Std/HelveticaNeueLTStd-Md.otf";
+	font-style: "normal"
+}
+
+$font-futura: "Futura", "VNF-Futura", Helvetica, Arial, sans-serif;
+$font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+$body-font-family: $font-helvetica !default;
+
+$global-radius: 2px !default;
+
+//color
+$primary-color: #14acf7;
+$secondary-color: #e7e7e7;
+$alert-color: #db423d;
+$success-color: #88dd0e;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+$dark: #202528;
+$asphalt: #283239;
+$yellow-label: #fff568;
+
+$header-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$topbar-bg-color: white !default;
+$topbar-bg: $topbar-bg-color !default;
+
+$topbar-link-color: $asphalt !default;
+$topbar-link-color-hover: $asphalt !default;
+$topbar-link-color-active: $asphalt !default;
+$topbar-link-color-active-hover: $asphalt !default;
+
+$topbar-height: 50px !default;
+$topbar-margin-bottom: 0 !default;
+
+$topbar-link-bg-hover: white !default;
+$topbar-link-bg-color-hover: white !default;
+$topbar-link-bg-active: white !default;
+$topbar-link-bg-active-hover: scale-color($topbar-link-bg-active, $lightness: 14%) !default;
+
+$topbar-link-text-transform: uppercase !default;
+
+$button-border-width: 1px;
+
+
+@import 'foundation';
+
+body {
+	position: static;
+	width: 100%;
+	height: 100%;
+	//background: $asphalt;
+	.overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		&>div {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		.carbon {
+			background-image: url(../assets/img/carbon-pattern.png);
+			opacity: 0.7;
+		}
+		.image {
+			background-image: url("../assets/img/dodge-viber-desktop.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+}
+
+.topbar-sticky {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0.9;
+	transition: top 0.3s linear;
+}
+
+
+.main{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: auto;
+	.section {
+		@media screen and(max-width: 40rem) {
+			text-align: center;
+		}
+		position: relative;
+		width: 100%;
+		min-height: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-color: transparent;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		&.hero-image {
+			overflow: hidden;
+			.logo {
+				display: block;
+				margin: auto;
+			}
+		}
+		.section-top-logo {
+			margin: 20px;
+		}
+		.page-content {
+			margin-top: 5rem;
+			max-width: 950px;
+			margin: 0 auto;
+			color: white;
+			h1, h2, h3 {
+				font-family: $font-futura;
+				color: white;
+			}
+			h1 {
+				font-size: 2.5rem;
+				color: white;
+			}
+			.demo-icon {
+				width: 128px;
+				height: 128px;
+			}
+		}
+	}
+}
+
+.top-bar.transparent {
+	margin-top: 10px;
+	height: 60px;
+	background: transparent;
+	li {
+		a {
+			color: white;
+		}
+	}
+}
+
+.section.map{
+	background: url(../assets/img/map.png) no-repeat;
+	background-size: cover;
+	.map-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.8)
+	}
+}
+
+body.top {
+	.topbar-sticky {
+		top: -20%;
+	}
+}
+
+@mixin ghost-button($bg, $color) {
+	background-color: transparent;
+	border-width: 2px;
+	color: $bg;
+	font-weight: bold;
+	transition: all 0.3s linear;
+	&:hover, &:active, &:focus {
+		color: $color;
+		background-color: $bg;
+	}
+}
+
+.button-ghost {
+	@include button($bg: transparent, $border-color: $yellow-label, $radius: true);
+	@include ghost-button($bg: $yellow-label, $color: $asphalt);
+}
+
+footer {
+	position: absolute;
+	z-index: 1000;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	opacity: 0.0;
+	transition: top 0.3s linear;
+}

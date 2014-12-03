@@ -1,0 +1,12 @@
+{
+  "browser": true,
+  "esnext": true,
+  "globals": {
+  	"require": true,
+  	"console": true
+  },
+  "globalstrict": false,
+  "quotmark": true,
+  "undef": true,
+  "unused": true
+}
