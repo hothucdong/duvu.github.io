@@ -7,21 +7,21 @@ tagline: Powerful Fleet Management System
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
-
+	<meta name="author" content="{{ site.author.name }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="/assets/umaps-line.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-	<div class="hero-image">
-		<div class="carbon-overlay"></div>
-	</div>
-	<div class="sticky">
+<body class="top">
+
+	<div class="topbar-sticky">
 		<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
 			<ul class="title-area">
 		    <li class="name">
 		      <h1>
 		      	<a href="#">
-		      		<img class="brand" src="img/umaps-logo-white.png" alt="logo">
+		      		<img class="brand" src="/assets/img/umaps-logo-white.png" alt="logo">
 		      	</a>
 		      </h1>
 		    </li>
@@ -48,67 +48,141 @@ tagline: Powerful Fleet Management System
 		</nav>
 	</div>
 
-	<div class="row">
-		<div class="column small-12">
-			<h1>Umaps style guide and assets</h1>
-		</div>
+	<div class="overlay">
+		<div class="image"></div>
+		<div class="carbon"></div>
 	</div>
 
-	<div class="row">
-		<div class="column small-12 medium-6">
-			<h2>Button</h2>
-			<!-- Size Classes -->
-			<a href="#" class="button">Default Button</a>
-			<!-- Color Classes -->
-			<a href="#" class="button secondary">Secondary Button</a>
-			<a href="#" class="button success">Success Button</a>
-			<a href="#" class="button alert">Alert Button</a>
-			<!-- Radius Classes -->
-			<a href="#" class="button radius">Radius Button</a>
-			<a href="#" class="button round">Rounded Button</a>
-			<!-- Disabled Class -->
-			<a href="#" class="button secondary disabled">Disabled Button</a>
-			<a href="#" class="ghost-button primary">Ghost</a>
-			<!-- Expand Class -->
-			<a href="#" class="button expand">Expanded Button</a>
-		</div>
-
-		<div class="column small-12 medium-6">
-			<h2>Horizontal Form</h2>
-			<form action="">
+	<div class="main one-page">
+		<section class="section hero-image page1">
+			<nav class="top-bar transparent hide-for-small">
+				<ul class="title-area">
+			    <li class="name">
+			      <h1>
+			      	<a href="#">
+			      		<img class="brand" src="/assets/img/umaps-logo-white.png" alt="logo">
+			      	</a>
+			      </h1>
+			    </li>
+			  </ul>
+			</nav>
+			<div class="page-content">
+				<img src="assets/img/logo-no-text.svg" alt="logo" class="logo">
+				<h1 class="text-center">
+					Hello. We make fleet tracking system.
+				</h1>
+				<p class="text-center">
+					<a href="" class="button-ghost warning">
+						And?
+					</a>
+				</p>
+			</div>
+		</section>
+		<section class="section active page2">
+			<div class="page-content">
+				<div class="row text-center hide-for-small">
+					<img src="assets/img/logo.svg" class="section-top-logo" alt="" width="60px" height="60px">
+				</div>
 				<div class="row">
-					<div class="column small-3">
-						<label for="" class="right inline">Label</label>
+					<div class="column medium-6">
+						<img src="http://lorempixel.com/300/400" alt="">
 					</div>
-					<div class="column small-9">
-						<input type="text">
+					<div class="column medium-6">
+						<h2>Blaah</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id ad dicta, dolorem ab, quisquam, nam dignissimos vitae consequuntur illo quos. Cupiditate labore tempora nam vel, accusamus rem aliquid facere.</p>
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="section page3">
+			<div class="row text-center hide-for-small">
+				<img src="assets/img/logo.svg" class="section-top-logo" alt="" width="60px" height="60px">
+			</div>
+			<div class="page-content">
+				<div class="row">
+					<div class="column small-12 medium-3 text-center">
+						<p class="text-center">
+							<img class="demo-icon" src="assets/img/line-icons/clock.svg" alt="">
+						</p>
+						<h3>Blah</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sunt assumenda recusandae aspernatur laboriosam, veritatis fugit aperiam.
+						</p>
+						<a href="" class="button success radius expand">More</a>
+					</div>
 
-				<p>With prefix</p>
-				<div class="row collapse">
-			    <div class="small-3 large-2 columns">
-			      <span class="prefix">http://</span>
-			    </div>
-			    <div class="small-9 large-10 columns">
-			      <input type="text" placeholder="Enter your URL...">
-			    </div>
-			  </div>
+					<div class="column small-12 medium-3 text-center">
+						<p class="text-center">
+							<img class="demo-icon" src="assets/img/line-icons/clock.svg" alt="">
+						</p>
+						<h3>Blah</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sunt assumenda recusandae aspernatur laboriosam, veritatis fugit aperiam.
+						</p>
+						<a href="" class="button success radius expand">More</a>
+					</div>
 
-			  <p>With subfix and even button class</p>
-				<div class="row collapse">
-			    <div class="small-9 large-10 columns">
-			      <input type="text" placeholder="Enter your URL...">
-			    </div>
-			    <div class="small-3 large-2 columns">
-			      <a class="postfix button alert">Never</a>
-			    </div>
-			  </div>
+					<div class="column small-12 medium-3 text-center">
+						<p class="text-center">
+							<img class="demo-icon" src="assets/img/line-icons/linegraph.svg" alt="">
+						</p>
+						<h3>Blah</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sunt assumenda recusandae aspernatur laboriosam, veritatis fugit aperiam.
+						</p>
+						<a href="" class="button success radius expand">More</a>
+					</div>
 
-			</form>
-		</div>
+					<div class="column small-12 medium-3 text-center">
+						<p class="text-center">
+							<img class="demo-icon" src="assets/img/line-icons/clock.svg" alt="">
+						</p>
+						<h3>Blah</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sunt assumenda recusandae aspernatur laboriosam, veritatis fugit aperiam.
+						</p>
+						<a href="" class="button success radius expand">More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section page3 price-table">
+			<div class="row text-center hide-for-small">
+				<img src="assets/img/logo.svg" class="section-top-logo" alt="" width="60px" height="60px">
+			</div>
+			<div class="page-content">
+				<div class="row text-center">
+					<ul class="button-group radius">
+					  <li><a href="#" class="button">Personal</a></li>
+					  <li><a href="#" class="button">Pro</a></li>
+					  <li><a href="#" class="button">Enterprise</a></li>
+					</ul>
+				</div>
+
+				<div class="row personal">
+					<div class="columns medium-4 text-center">
+						<img src="assets/img/line-icons/profile-male.svg" alt="" width="100px" height="100px">
+					</div>
+					<div class="columns medium-8">
+						<h3>Personal account</h3>
+						<p>Provide blab blah blah. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quis aspernatur possimus adipisci quaerat ab? Possimus nemo architecto, distinctio voluptates fugiat ipsum aperiam, incidunt, tempore praesentium modi voluptate! Nobis, nihil.</p>
+						<p class="price">
+							<i class="uli-pricetags"></i> $0.05 per month
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section page3 map">
+			<div class="map-bg"></div>
+		</section>
 	</div>
 
+	<footer>
+		<div class="row">
+			<p>&copy; 2014 Umaps Co., Ltd.</p>
+		</div>
+	</footer>
 	<script src="/js/main.js"></script>
 </body>
 </html>

@@ -24,7 +24,8 @@
   "browser": {
     "modernizr": "./_bower_components/modernizr/modernizr.js",
     "jquery": "./_bower_components/jquery/dist/jquery.js",
-    "foundation": "./_bower_components/foundation/js/foundation.js"
+    "foundation": "./_bower_components/foundation/js/foundation.js",
+    "jquery-waypoints": "./_bower_components/jquery-waypoints/waypoints.js"
   },
   "browserify-shim": {
     "modernizr": "Modernizr",

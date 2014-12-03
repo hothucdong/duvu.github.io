@@ -5525,7 +5525,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #202528;
+  background: white;
 }
 .contain-to-grid .top-bar {
   margin-bottom: 0;
@@ -5559,7 +5559,7 @@ meta.foundation-mq-topbar {
   height: 50px;
   line-height: 50px;
   position: relative;
-  background: #202528;
+  background: white;
   margin-bottom: 0;
 }
 .top-bar ul {
@@ -5607,7 +5607,7 @@ meta.foundation-mq-topbar {
 }
 .top-bar .name h1 a {
   font-weight: normal;
-  color: white;
+  color: #283239;
   width: 75%;
   display: block;
   padding: 0 16.66667px;
@@ -5618,7 +5618,7 @@ meta.foundation-mq-topbar {
   top: 0;
 }
 .top-bar .toggle-topbar a {
-  color: white;
+  color: #283239;
   text-transform: uppercase;
   font-size: 0.8125rem;
   font-weight: bold;
@@ -5658,7 +5658,7 @@ meta.foundation-mq-topbar {
   background: transparent;
 }
 .top-bar.expanded .title-area {
-  background: #202528;
+  background: white;
 }
 .top-bar.expanded .toggle-topbar a {
   color: #888888;
@@ -5684,7 +5684,7 @@ meta.foundation-mq-topbar {
 }
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
-  border-top: solid 1px #101314;
+  border-top: solid 1px gray;
   clear: both;
   height: 1px;
   width: 100%;
@@ -5695,13 +5695,13 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
   display: block;
   width: 100%;
-  color: white;
+  color: #283239;
   padding: 12px 0 12px 0;
   padding-left: 16.66667px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
-  text-transform: none;
+  text-transform: uppercase;
 }
 .top-bar-section ul li > a.button {
   font-size: 0.8125rem;
@@ -5820,17 +5820,17 @@ meta.foundation-mq-topbar {
   color: white;
 }
 .top-bar-section ul li:hover:not(.has-form) > a {
-  background-color: #283239;
-  background: #283239;
-  color: white;
+  background-color: white;
+  background: white;
+  color: #283239;
 }
 .top-bar-section ul li.active > a {
-  background: #283239;
-  color: white;
+  background: white;
+  color: #283239;
 }
 .top-bar-section ul li.active > a:hover {
-  background: #40505b;
-  color: white;
+  background: white;
+  color: #283239;
 }
 .top-bar-section .has-form {
   padding: 16.66667px;
@@ -5898,7 +5898,7 @@ meta.foundation-mq-topbar {
   font-size: 1.125rem;
 }
 .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
-  color: white;
+  color: #283239;
   display: block;
 }
 .top-bar-section .dropdown li.title h5 a:hover, .top-bar-section .dropdown li.parent-link a:hover {
@@ -5925,7 +5925,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #202528;
+    background: white;
     overflow: visible;
   }
   .top-bar:before, .top-bar:after {
@@ -5952,7 +5952,7 @@ meta.foundation-mq-topbar {
     top: 7px;
   }
   .top-bar.expanded {
-    background: #202528;
+    background: white;
   }
 
   .contain-to-grid .top-bar {
@@ -5978,28 +5978,28 @@ meta.foundation-mq-topbar {
     display: none;
   }
   .top-bar-section li.hover > a:not(.button) {
-    background-color: #283239;
-    background: #283239;
-    color: white;
+    background-color: white;
+    background: white;
+    color: #283239;
   }
   .top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 16.66667px;
     line-height: 50px;
-    background: #202528;
+    background: white;
   }
   .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background-color: #283239;
-    background: #283239;
+    background-color: white;
+    background: white;
   }
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     padding: 0 16.66667px;
     line-height: 50px;
-    color: white;
-    background: #283239;
+    color: #283239;
+    background: white;
   }
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background: #40505b;
-    color: white;
+    background: white;
+    color: #283239;
   }
   .top-bar-section .has-dropdown > a {
     padding-right: 36.66667px !important;
@@ -6070,9 +6070,9 @@ meta.foundation-mq-topbar {
     background: #333333;
   }
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
-    color: white;
-    background-color: #283239;
-    background: #283239;
+    color: #283239;
+    background-color: white;
+    background: white;
   }
   .top-bar-section .dropdown li label {
     white-space: nowrap;
@@ -6085,13 +6085,13 @@ meta.foundation-mq-topbar {
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
-    border-right: solid 1px #394248;
+    border-right: solid 1px white;
     clear: none;
     height: 50px;
     width: 0;
   }
   .top-bar-section .has-form {
-    background: #202528;
+    background: white;
     padding: 0 16.66667px;
     height: 50px;
   }
@@ -6111,13 +6111,13 @@ meta.foundation-mq-topbar {
   }
 
   .no-js .top-bar-section ul li:hover > a {
-    background-color: #283239;
-    background: #283239;
-    color: white;
+    background-color: white;
+    background: white;
+    color: #283239;
   }
   .no-js .top-bar-section ul li:active > a {
-    background: #283239;
-    color: white;
+    background: white;
+    color: #283239;
   }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block;
@@ -7612,10 +7612,166 @@ th.hide-for-touch {
   }
 }
 body {
-  background: #283239;
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+body .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body .overlay > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body .overlay .carbon {
+  background-image: url(../assets/img/carbon-pattern.png);
+  opacity: 0.7;
+}
+body .overlay .image {
+  background-image: url("../assets/img/dodge-viber-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.hero-image {
+.topbar-sticky {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
+  opacity: 0.9;
+  -webkit-transition: top 0.3s linear;
+          transition: top 0.3s linear;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+.main .section {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 40rem) {
+  .main .section {
+    text-align: center;
+  }
+}
+.main .section.hero-image {
+  overflow: hidden;
+}
+.main .section.hero-image .logo {
+  display: block;
+  margin: auto;
+}
+.main .section .section-top-logo {
+  margin: 20px;
+}
+.main .section .page-content {
+  margin-top: 5rem;
+  max-width: 950px;
+  margin: 0 auto;
+  color: white;
+}
+.main .section .page-content h1, .main .section .page-content h2, .main .section .page-content h3 {
+  font-family: "Futura", "VNF-Futura", Helvetica, Arial, sans-serif;
+  color: white;
+}
+.main .section .page-content h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+.main .section .page-content .demo-icon {
+  width: 128px;
+  height: 128px;
+}
+
+.top-bar.transparent {
+  margin-top: 10px;
+  height: 60px;
+  background: transparent;
+}
+.top-bar.transparent li a {
+  color: white;
+}
+
+.section.map {
+  background: url(../assets/img/map.png) no-repeat;
+  background-size: cover;
+}
+.section.map .map-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+body.top .topbar-sticky {
+  top: -20%;
+}
+
+.button-ghost {
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border-color: #fff568;
+  color: white;
+  border-radius: 2px;
+  -webkit-transition: background-color 300ms ease-out;
+          transition: background-color 300ms ease-out;
+  background-color: transparent;
+  border-width: 2px;
+  color: #fff568;
+  font-weight: bold;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+.button-ghost:hover, .button-ghost:focus {
+  background-color: transparent;
+}
+.button-ghost:hover, .button-ghost:focus {
+  color: white;
+}
+.button-ghost:hover, .button-ghost:active, .button-ghost:focus {
+  color: #283239;
+  background-color: #fff568;
+}
+
+footer {
+  position: absolute;
+  z-index: 1000;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  opacity: 0.0;
+  -webkit-transition: top 0.3s linear;
+          transition: top 0.3s linear;
 }

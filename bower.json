@@ -23,6 +23,7 @@
     "tests"
   ],
   "devDependencies": {
-    "foundation": "~5.4.7"
+    "foundation": "~5.4.7",
+    "jquery-waypoints": "~2.0.5"
   }
 }

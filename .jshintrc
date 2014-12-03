@@ -2,7 +2,8 @@
   "browser": true,
   "esnext": true,
   "globals": {
-  	"require": true
+  	"require": true,
+  	"console": true
   },
   "globalstrict": false,
   "quotmark": true,

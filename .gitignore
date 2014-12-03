@@ -1,9 +1,11 @@
 _site/*
 _theme_packages/*
+_bower_components
+node_modules
 
 Thumbs.db
 .DS_Store
-
+.sass-cache
 !.gitkeep
 
 .rbenv-version
