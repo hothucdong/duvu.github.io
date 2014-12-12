@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "Futura";
-	src: "../fonts/VNF-Futura.ttf"
+	src: url("../assets/fonts/VNF-Futura.ttf")
 }
 
 @font-face {
 	font-family: "Helvetica Neue";
-	src: "../fonts/Helvetica Neue LT Std/HelveticaNeueLTStd-Md.otf";
+	src: url("../assets/fonts/Helvetica Neue LT Std/HelveticaNeueLTStd-Md.otf");
 	font-style: "normal"
 }
 
@@ -142,8 +142,10 @@ body {
 	height: 60px;
 	background: transparent;
 	li {
+		list-style: none;
 		a {
 			color: white;
+			display: inline;
 		}
 	}
 }
@@ -183,7 +185,103 @@ body.top {
 	@include button($bg: transparent, $border-color: $yellow-label, $radius: true);
 	@include ghost-button($bg: $yellow-label, $color: $asphalt);
 }
+.pro, .enterprise{
+	display: none;
+}
+.logo-partner{
+	padding-top: 30px;
+}
+.partner{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	min-height: 100%;
+	background-color:rgba(0,255,255,0.1);
+}
+.device-content{
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .device{
+    padding:0px;
+    padding-bottom: 0px;
+    border-radius: 4px;
+    h3{
+    	text-align: center;
+    }
+    p{
+    	font-size: 15px;
+    	padding:0px 5px;
+    }
+    label{
+    	text-align: center;
+    	padding:20px auto;
+    	font-size: 20px;
+    	color: red;
+    }
 
+  }
+  .device .device-img{
+    text-align: center;
+    position: relative;
+  }
+  .device .device-img img{
+    max-width: 80%;
+    padding-bottom: 10px;
+    padding-top: 12px;
+    transition: all 0.8s ease-in-out 0s;
+  }
+  .device:hover img{
+    transform: scale(1.1) rotate(2deg);
+    overflow: hidden;
+  }
+  .device:hover label {
+ 		 background: #f2f2f2;
+}
+  .device:hover{
+    box-shadow: 0 0 9px #ddd;
+  }
+ 
+ 	.nav-bar{
+  	width: 950px;
+  	height: 50px;
+  	margin: 10px auto;
+  	padding-bottom: 30px;
+  	ul{
+	  	width: 50%;
+	  	float: right;
+	  	margin-top: 10px;
+	  	margin-bottom: 50px;
+	  	border-bottom: 1px solid #777;
+	  	a{
+	  		padding-left: 15px;
+	  		padding-bottom: 5px;
+	  		font-size: 20px;
+	  		font-style: bold;
+	  		font-family:'Open Sans', sans-serif;
+	  		color:#555;
+	  		&:hover{
+	  			color: #72c02c;
+	  			border-bottom: 3px solid #72c02c;
+	  		}
+	  	}
+
+  	}
+  	.logo{
+  		background:#72c02c;
+  		float: left;
+  		border-radius:3px;
+  	}
+  	h2{
+  		clear: right;
+  		border-bottom: 2px solid #72c02c;
+  		color: #585f69;
+  		text-align: center;
+  	}
+  }
+
+ /*Footer*/ 
 footer {
 	position: absolute;
 	z-index: 1000;
@@ -192,4 +290,71 @@ footer {
 	width: 100%;
 	opacity: 0.0;
 	transition: top 0.3s linear;
+}
+.foot{
+	width:100%;
+	padding: 30px 10px 0px 10px;
+	color: #dadada;
+	background: #585f69;
+	h3{
+	border-bottom:2px solid #72c02c;
+	padding-bottom: 20px;
+	color: #ffffff;
+	text-align: center;
+	}
+	h4{
+		text-align: left;
+		color: #ffffff;
+		border-bottom: 1px dotted #e4e9f0;
+	}
+	p{
+		color: #fff;
+	}
+	ul li{
+		list-style: none;
+		padding: 12px auto;
+		font-style: sans-serif;
+		color: #fff;
+		a{
+			color:#72c02c;
+			text-decoration: none;
+			font-size: 18px;
+		}
+	}
+}
+.foot .row{
+	max-width: 100%;
+}
+
+.foot .row .footer-inf{
+	
+}
+.foot .row .footer-contact{
+	a{ 
+		text-decoration: none;
+		color: #fff;
+		i{
+			font-size: 40px;
+			padding: 10px 5px;
+			background-color: transparent;
+			transition: all 0.8s ease-in-out 0s;
+			&:hover{
+			color: #14acf7;
+			transform: scale(1.1);
+		}
+		}
+	}	
+}
+.foot .cpr-footer{
+	padding-top:15px;
+	padding-bottom:10px;
+	min-width:100%;
+	border-top: 1px solid #777;
+	background:#3e4753;
+	margin-bottom: 0px;
+	margin-right:0px;
+	margin-left:0px;
+	p{
+		font-size: 14px;
+	}
 }

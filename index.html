@@ -1,10 +1,12 @@
 ---
+layout: default
 title: GPSHandle.com|The powerful fleet management system
 tagline: Powerful Fleet Management System
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+
+<!--
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="{{ site.author.name }}">
@@ -12,8 +14,10 @@ tagline: Powerful Fleet Management System
 	<title>{{ page.title }}</title>
 	<link rel="stylesheet" href="/assets/umaps-line.css">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
-<body class="top">
+-->
+
 
 	<div class="topbar-sticky">
 		<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
@@ -64,6 +68,7 @@ tagline: Powerful Fleet Management System
 			      	</a>
 			      </h1>
 			    </li>
+			    <li>Test</li>
 			  </ul>
 			</nav>
 			<div class="page-content">
@@ -153,17 +158,17 @@ tagline: Powerful Fleet Management System
 			<div class="page-content">
 				<div class="row text-center">
 					<ul class="button-group radius">
-					  <li><a href="#" class="button">Personal</a></li>
-					  <li><a href="#" class="button">Pro</a></li>
-					  <li><a href="#" class="button">Enterprise</a></li>
+					  <li><a href="#" class="button" id="show-personal">Personal</a></li>
+					  <li><a href="#" class="button" id="show-pro">Pro</a></li>
+					  <li><a href="#" class="button" id="show-enterprise">Enterprise</a></li>
 					</ul>
 				</div>
 
-				<div class="row personal">
+				<div class="row personal" id="personal">
 					<div class="columns medium-4 text-center">
 						<img src="assets/img/line-icons/profile-male.svg" alt="" width="100px" height="100px">
 					</div>
-					<div class="columns medium-8">
+					<div class="columns medium-8 pesonal-account">
 						<h3>Personal account</h3>
 						<p>Provide blab blah blah. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quis aspernatur possimus adipisci quaerat ab? Possimus nemo architecto, distinctio voluptates fugiat ipsum aperiam, incidunt, tempore praesentium modi voluptate! Nobis, nihil.</p>
 						<p class="price">
@@ -171,6 +176,90 @@ tagline: Powerful Fleet Management System
 						</p>
 					</div>
 				</div>
+
+				<div class="row pro" id="pro">
+					<div class="columns medium-4 text-center">
+						<img src="assets/img/line-icons/profile-male.svg" alt="" width="100px" height="100px">
+					</div>
+					<div class="columns medium-8 pesonal-account">
+						<h3>Pro account</h3>
+						<p>Provide blab blah blah. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quis aspernatur possimus adipisci quaerat ab? Possimus nemo architecto, distinctio voluptates fugiat ipsum aperiam, incidunt, tempore praesentium modi voluptate! Nobis, nihil.</p>
+						<p class="price">
+							<i class="uli-pricetags"></i> $0.05 per month
+						</p>
+					</div>
+				</div>
+
+				<div class="row enterprise" id="enterprise">
+					<div class="columns medium-4 text-center">
+						<img src="assets/img/line-icons/profile-male.svg" alt="" width="100px" height="100px">
+					</div>
+					<div class="columns medium-8 pesonal-account">
+						<h3>Enterprise account</h3>
+						<p>Provide blab blah blah. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quis aspernatur possimus adipisci quaerat ab? Possimus nemo architecto, distinctio voluptates fugiat ipsum aperiam, incidunt, tempore praesentium modi voluptate! Nobis, nihil.</p>
+						<p class="price">
+							<i class="uli-pricetags"></i> $0.05 per month
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section page3">
+		<div class="devices">
+			<div class="row text-center hide-for-small">
+				<img src="assets/img/logo.svg" class="section-top-logo" alt="" width="60px" height="60px">
+			</div>
+
+			<div class="page-content">
+				<div class="row">
+					<div class="columns medium-offset-3 medium-6">
+						<h3 class="text-center">GPS Tracking Devices</h3>
+						<p>GPS Tracker Shop provides the monitoring solutions to assist businesses in enhancing driver efficiency, automotive security, mileage documentation, fuel management and fleet tracking activity. With reliable vehicle management devices that require no monthly service fees and live GPS systems that offer unlimited web-based monitoring, GPS Tracker Shop has the devices to help companies reduce overhead, families improve teen driving safety, government agencies conduct accurate surveillance or anyone safeguard personal and vehicle assets!
+						</p>
+					</div>
+				</div>
+				<div class="row text-center">
+					<a class="button success radius" href="/device/device.html">Show Device</a>
+				</div>
+			</div>
+			</div>
+		</section>
+
+		<section class="section page3">
+		<div class="partner">
+			<div class="row text-center hide-for-small">
+				<img src="assets/img/logo.svg" class="section-top-logo" alt="" width="60px" height="60px">
+			</div>
+
+			<div class="page-content">
+				<div class="text-center">
+					<h3>Our Clients & Partners</h3>
+				</div>
+				<div class="row logo-partner">
+					<div class="columns medium-4">
+						<img src="assets/img/vnetgps.png" alt="">
+					</div>
+					<div class="columns medium-4">
+						<img src="assets/img/teltonika.png" alt="">
+					</div>
+					<div class="columns medium-4">
+						<img src="assets/img/mei.png" alt="">
+					</div>
+				</div>
+				<div class="row logo-partner">
+					<div class="columns medium-4">
+						<img src="assets/img/jointech.png" alt="">
+					</div>
+					<div class="columns medium-4">
+						<img src="assets/img/atrack.png" alt="">
+					</div>
+					<div class="columns medium-4">
+						<img src="assets/img/atrack.png" alt="">
+					</div>
+				</div>
+			</div>
 			</div>
 		</section>
 		<section class="section page3 map">
@@ -184,5 +273,22 @@ tagline: Powerful Fleet Management System
 		</div>
 	</footer>
 	<script src="/js/main.js"></script>
-</body>
-</html>
+	<script>
+	$(document).ready(function(){
+		$("#show-personal").click(function(){
+			$("#personal").show();
+			$("#pro").hide();
+			$("#enterprise").hide();
+		})
+		$("#show-pro").click(function(){
+			$("#personal").hide();
+			$("#pro").show();
+			$("#enterprise").hide();
+		})
+		$("#show-enterprise").click(function(){
+			$("#personal").hide();
+			$("#pro").hide();
+			$("#enterprise").show();
+		})
+	})
+	</script>
