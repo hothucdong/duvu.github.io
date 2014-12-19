@@ -19710,13 +19710,13 @@ body .overlay .color {
 }
 
 #text-trans2 {
-  position: relative;
+  position: absolute;
   display: none;
   right: -30px;
 }
 
 #img-trans2 {
-  position: relative;
+  position: absolute;
   display: none;
   left: -30px;
 }

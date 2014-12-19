@@ -89,7 +89,7 @@ $(document).ready(function() {
     });
     
     $("#page4").waypoint(function(event, direction){
-      $('.personal').fadeIn(800);
+      $('.personal').fadeIn(1000);
       console.log('service-group');
     },{
       context: $("#page4").parent(),
@@ -99,18 +99,18 @@ $(document).ready(function() {
     $("#page2").waypoint(function(){
       $("#text-trans2").animate({
         right: '50px'
-      },500);
+      },800);
 
-      $('#text-trans2').toggle(500);
+      $('#text-trans2').toggle(2000);
 
       $("#img-trans2").animate({
         left: '40px'
-      },500);
-      $('#img-trans2').toggle(500);
+      },800);
+      $('#img-trans2').toggle(2000);
       console.log('text-trans2');
     },{
       context: $("#page2").parent(),
-      triggerOnce: true
+      triggerOnce: false
     });
 
    $("#page3").waypoint(function(){
