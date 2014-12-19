@@ -4,8 +4,6 @@ title: GPSHandle.com|The powerful fleet management system
 tagline: Powerful Fleet Management System
 ---
 
-<!DOCTYPE html>
-
 <!--
 <head>
 	<meta charset="UTF-8">
@@ -16,9 +14,8 @@ tagline: Powerful Fleet Management System
 	<link rel="stylesheet" href="css/main.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
+
 -->
-
-
 	<div class="topbar-sticky">
 		<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
 			<ul class="title-area">
@@ -54,6 +51,7 @@ tagline: Powerful Fleet Management System
 
 	<div class="overlay">
 		<div class="image"></div>
+		<div class="color" id="page-color"></div>
 		<div class="carbon"></div>
 	</div>
 
@@ -82,20 +80,20 @@ tagline: Powerful Fleet Management System
 				</p>
 			</div>
 		</section>
-		<section class="section active page2">
+		<section class="section active page2" id="page2">
 			<div class="page-content">
 				<div class="row text-center hide-for-small">
 					<img src="assets/img/logo.svg" class="section-top-logo" alt="" width="60px" height="60px">
 				</div>
 				<div class="row">
-					<div class="column medium-6">
+					<div class="column medium-6" id="img-trans2">
 						<img src="http://lorempixel.com/300/400" alt="">
 					</div>
-					<div class="column medium-6">
+					<div class="column medium-6" id="text-trans2">
 						<h2 class="text-center">Blaah</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id ad dicta, dolorem ab, quisquam, nam dignissimos vitae consequuntur illo quos. Cupiditate labore tempora nam vel, accusamus rem aliquid facere.</p>
 						<p class="text-center">
-						<a href="" class="button-ghost warning">
+						<a href="" class="button-ghost warning" id="request1">
 							Request Demo
 						</a>
 				</p>
@@ -103,7 +101,7 @@ tagline: Powerful Fleet Management System
 				</div>
 			</div>
 		</section>
-		<section class="section page3">
+		<section class="section page3" id="page3">
 			<div class="row text-center hide-for-small">
 				<img src="assets/img/logo.svg" class="section-top-logo" alt="" width="60px" height="60px">
 			</div>
@@ -111,55 +109,55 @@ tagline: Powerful Fleet Management System
 				<div class="row">
 					<div class="column small-12 medium-3 text-center">
 						<p class="text-center">
-							<img class="demo-icon" src="assets/img/line-icons/clock.svg" alt="">
+							<img class="demo-icon1" src="assets/img/line-icons/clock.svg" alt="">
 						</p>
-						<h3>Blah</h3>
+						<h3>{{site.data.feature.feature1.name}}</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sunt assumenda recusandae aspernatur laboriosam, veritatis fugit aperiam.
+							{{site.data.feature.feature1.content}}
 						</p>
 						<a href="" class="button success radius expand">More</a>
 					</div>
 
 					<div class="column small-12 medium-3 text-center">
 						<p class="text-center">
-							<img class="demo-icon" src="assets/img/line-icons/clock.svg" alt="">
+							<img class="demo-icon2" src="assets/img/line-icons/clock.svg" alt="">
 						</p>
-						<h3>Blah</h3>
+						<h3>{{site.data.feature.feature2.name}}</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sunt assumenda recusandae aspernatur laboriosam, veritatis fugit aperiam.
+							{{site.data.feature.feature2.content}}
 						</p>
 						<a href="" class="button success radius expand">More</a>
 					</div>
 
 					<div class="column small-12 medium-3 text-center">
 						<p class="text-center">
-							<img class="demo-icon" src="assets/img/line-icons/linegraph.svg" alt="">
+							<img class="demo-icon3" src="assets/img/line-icons/linegraph.svg" alt="">
 						</p>
-						<h3>Blah</h3>
+						<h3>{{site.data.feature.feature3.name}}</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sunt assumenda recusandae aspernatur laboriosam, veritatis fugit aperiam.
+							{{site.data.feature.feature3.content}}
 						</p>
 						<a href="" class="button success radius expand">More</a>
 					</div>
 
 					<div class="column small-12 medium-3 text-center">
 						<p class="text-center">
-							<img class="demo-icon" src="assets/img/line-icons/clock.svg" alt="">
+							<img class="demo-icon4" src="assets/img/line-icons/clock.svg" alt="">
 						</p>
-						<h3>Blah</h3>
+						<h3>{{site.data.feature.feature4.name}}</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sunt assumenda recusandae aspernatur laboriosam, veritatis fugit aperiam.
+							{{site.data.feature.feature4.content}}
 						</p>
 						<a href="" class="button success radius expand">More</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section page3 price-table">
+		<section class="section page3 price-table" id="page4">
 			<div class="row text-center hide-for-small">
 				<img src="assets/img/logo.svg" class="section-top-logo" alt="" width="60px" height="60px">
 			</div>
-			<div class="page-content">
+			<div class="page-content" id="service-group">
 				<div class="row text-center">
 					<ul class="button-group radius">
 					  <li><a href="#" class="button" id="show-personal">Personal</a></li>
@@ -167,29 +165,62 @@ tagline: Powerful Fleet Management System
 					  <li><a href="#" class="button" id="show-enterprise">Enterprise</a></li>
 					</ul>
 				</div>
-
-				<div class="row personal" id="personal">
-					<div class="columns medium-4 text-center">
-						<img src="assets/img/line-icons/profile-male.svg" alt="" width="100px" height="100px">
+<!--				
+				<div>
+				<ul>
+				{% for service in site.data.price %}
+					<li>
+						<div class="row personal">
+							<div class="columns medium-4 text-center">
+									<img src="assets/img/line-icons/profile-male.svg" alt="" width="100px" height="100px">
+							</div>
+						<div class="columns medium-8 pesonal-account">
+							<h3>{{service.title}}</h3>
+							<p class="price">
+								<i class="uli-pricetags"></i> ${{service.price}} per month
+							</p>
+						</div>
 					</div>
-					<div class="columns medium-8 pesonal-account">
-						<h3>Personal account</h3>
-						<p>Provide blab blah blah. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quis aspernatur possimus adipisci quaerat ab? Possimus nemo architecto, distinctio voluptates fugiat ipsum aperiam, incidunt, tempore praesentium modi voluptate! Nobis, nihil.</p>
-						<p class="price">
-							<i class="uli-pricetags"></i> $0.05 per month
-						</p>
-					</div>
+					</li>
+				{% endfor %}
+				</ul>
 				</div>
+				-->
+<!--
+				<div>
+					<ul>
+						{% for post in site.posts %}
+						<li>
+							<h2><a class="post-link" href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+							<span>{{post.date | date: "%b %-d, %Y"}}</span>
+							{{post.excerpt}}
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+				-->
+				<div class="row personal" id="personal">
+							<div class="columns medium-4 text-center">
+									<img src="assets/img/line-icons/profile-male.svg" alt="" width="100px" height="100px">
+							</div>
+						<div class="columns medium-8 pesonal-account">
+							<h3>{{site.data.price.per.title}}</h3>
+							<p>{{site.data.price.per.content}}</p>
+							<p class="price">
+								<i class="uli-pricetags"></i> ${{site.data.price.per.price}} per month
+							</p>
+						</div>
+					</div>
 
 				<div class="row pro" id="pro">
 					<div class="columns medium-4 text-center">
 						<img src="assets/img/line-icons/profile-male.svg" alt="" width="100px" height="100px">
 					</div>
 					<div class="columns medium-8 pesonal-account">
-						<h3>Pro account</h3>
-						<p>Provide blab blah blah. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quis aspernatur possimus adipisci quaerat ab? Possimus nemo architecto, distinctio voluptates fugiat ipsum aperiam, incidunt, tempore praesentium modi voluptate! Nobis, nihil.</p>
+						<h3>{{site.data.price.pro.title}}</h3>
+						<p>{{site.data.price.pro.content}}</p>
 						<p class="price">
-							<i class="uli-pricetags"></i> $0.05 per month
+							<i class="uli-pricetags"></i> ${{site.data.price.pro.price}} per month
 						</p>
 					</div>
 				</div>
@@ -199,18 +230,18 @@ tagline: Powerful Fleet Management System
 						<img src="assets/img/line-icons/profile-male.svg" alt="" width="100px" height="100px">
 					</div>
 					<div class="columns medium-8 pesonal-account">
-						<h3>Enterprise account</h3>
-						<p>Provide blab blah blah. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quis aspernatur possimus adipisci quaerat ab? Possimus nemo architecto, distinctio voluptates fugiat ipsum aperiam, incidunt, tempore praesentium modi voluptate! Nobis, nihil.</p>
+						<h3>{{site.data.price.en.title}}</h3>
+						<p>{{site.data.price.en.content}}</p>
 						<p class="price">
-							<i class="uli-pricetags"></i> $0.05 per month
+							<i class="uli-pricetags"></i> ${{site.data.price.en.price}} per month
 						</p>
 					</div>
 				</div>
-
+			
 			</div>
 		</section>
 
-		<section class="section page3">
+		<section class="section page3" id="page5">
 		<div class="devices">
 			<div class="row text-center hide-for-small">
 				<img src="assets/img/logo.svg" class="section-top-logo" alt="" width="60px" height="60px">
@@ -231,7 +262,7 @@ tagline: Powerful Fleet Management System
 			</div>
 		</section>
 
-		<section class="section page3">
+		<section class="section page3" id="page6">
 		<div class="partner">
 			<div class="row text-center hide-for-small">
 				<img src="assets/img/logo.svg" class="section-top-logo" alt="" width="60px" height="60px">
@@ -260,54 +291,67 @@ tagline: Powerful Fleet Management System
 						<img src="assets/img/atrack.png" alt="">
 					</div>
 					<div class="columns medium-4">
-						<img src="assets/img/cl1.jpg" alt="">
+						<img src="assets/img/jointech.png" alt="">
 					</div>
 				</div>
 				<div class="row logo-partner">
 					<div class="columns medium-4">
-						<img src="assets/img/cl2.jpg" alt="">
+						<img src="assets/img/jointech.png" alt="">
 					</div>
 					<div class="columns medium-4">
-						<img src="assets/img/cl3.jpg" alt="">
+						<img src="assets/img/atrack.png" alt="">
 					</div>
 					<div class="columns medium-4">
-						<img src="assets/img/cl4.png" alt="">
+						<img src="assets/img/jointech.png" alt="">
+					</div>
+				</div>
+				<div class="row logo-partner">
+					<div class="columns medium-4">
+						<img src="assets/img/jointech.png" alt="">
+					</div>
+					<div class="columns medium-4">
+						<img src="assets/img/atrack.png" alt="">
+					</div>
+					<div class="columns medium-4">
+						<img src="assets/img/jointech.png" alt="">
 					</div>
 				</div>
 			</div>
 			</div>
 		</section>
-		<section class="section page3 request-location">
+		<section class="section page3 request-location" id="page7">
 			<div class="row">
-				<div class="columns medium-5 request">
+				<div class="columns medium-6 request">
 					<h3 class="text-center"><a name="request">Request Demo</a></h3>
 					<form>
 						<div class="row">
 							<div class="medium-12 columns">
-								<p><strong>Name</strong>
+								<p>Name
 									<input type="text" placeholder="Enter your name">
 								</p>
 							</div>
 							<div class="medium-12 columns">
-								<p><strong>Email</strong>
+								<p>Email
 									<input type="text" placeholder="Enter your email">
 								</p>
 							</div>
 							<div class="medium-12 columns">
-								<p><strong>Message</strong>
+								<p>Message
 									<textarea placeholder="Leave us a message" rows="5"></textarea>
 								</p>
 							</div>							
 							
 							<div class="medium-12 columns request-btn">
 								<p class="text-center">
-										<a class="button success radius" href="/device/device.html">Sent Request</a>
+									<a href="/device/device.html" class="button-ghost warning request-btn">
+										Request Demo
+									</a>
 								</p>
 							</div>
 						</div>
 					</form>
 				</div>
-				<div class="columns medium-7 location">
+				<div class="columns medium-6 location">
 					<img src="assets/img/gps-location.png" alt="">
 				</div>
 				</div>
@@ -387,26 +431,6 @@ tagline: Powerful Fleet Management System
 			<p>&copy; 2014 Umaps Co., Ltd.</p>
 		</div>
 	</footer>
-	<script src="/js/main.js"></script>
-	<script>
-	$(document).ready(function(){
-		$("#show-personal").click(function(){
-			$("#personal").show();
-			$("#pro").hide();
-			$("#enterprise").hide();
-		})
-		$("#show-pro").click(function(){
-			$("#personal").hide();
-			$("#pro").show();
-			$("#enterprise").hide();
-		})
-		$("#show-enterprise").click(function(){
-			$("#personal").hide();
-			$("#pro").hide();
-			$("#enterprise").show();
-		})
-	})
-	</script>
-	<script>
-
-	</script>
+	<script src="javascripts/jquery.min.js"></script>
+	
+	<script src="javascripts/main.js"></script>

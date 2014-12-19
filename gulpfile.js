@@ -34,6 +34,7 @@ gulp.task('scripts', function() {
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 
+
 gulp.task('clean', function() {
   return gulp.src(['css', 'js'], {read: false})
     .pipe(clean());

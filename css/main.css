@@ -19605,6 +19605,9 @@ body .overlay .image {
   background-repeat: no-repeat;
   background-size: cover;
 }
+body .overlay .color {
+  background-color: none;
+}
 
 .topbar-sticky {
   position: absolute;
@@ -19661,9 +19664,61 @@ body .overlay .image {
   font-size: 2.5rem;
   color: white;
 }
-.main .section .page-content .demo-icon {
+.main .section .page-content .demo-icon1 {
   width: 128px;
   height: 128px;
+}
+.main .section .page-content .demo-icon1.animate {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.main .section .page-content .demo-icon2 {
+  width: 128px;
+  height: 128px;
+}
+.main .section .page-content .demo-icon2.animate {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.main .section .page-content .demo-icon3 {
+  width: 128px;
+  height: 128px;
+}
+.main .section .page-content .demo-icon3.animate {
+  -webkit-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.main .section .page-content .demo-icon4 {
+  width: 128px;
+  height: 128px;
+}
+.main .section .page-content .demo-icon4.animate {
+  -webkit-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#text-trans2 {
+  position: relative;
+  display: none;
+  right: -30px;
+}
+
+#img-trans2 {
+  position: relative;
+  display: none;
+  left: -30px;
 }
 
 .top-bar.transparent {
@@ -19739,18 +19794,16 @@ body.top .topbar-sticky {
   background-color: #fff568;
 }
 
-.pro, .enterprise {
+.pro, .enterprise, .personal {
   display: none;
 }
 
 .logo-partner {
   text-align: center;
-  padding-top: 30px;
-  padding-left: 20px;
+  margin-top: 60px;
+  margin-left: 30px;
 }
 .logo-partner img {
-  width: 80px;
-  height: 70px;
   background-color: transparent;
 }
 
@@ -19759,11 +19812,13 @@ body.top .topbar-sticky {
   bottom: 0px;
   width: 100%;
   min-height: 100%;
-  background-color: rgba(0, 255, 255, 0.4);
 }
 
 .request-location {
+  padding-top: 30px;
   background: none;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .request {
@@ -19771,7 +19826,7 @@ body.top .topbar-sticky {
   position: absolute;
   left: 0px;
   top: 0px;
-  padding-top: 30px;
+  padding-top: 50px;
   min-height: 100%;
   min-width: 44%;
 }
@@ -19780,23 +19835,35 @@ body.top .topbar-sticky {
 }
 .request h3 a {
   text-decoration: none;
-  color: #000;
+  color: #f26c4f;
 }
 .request p {
   color: #000;
 }
 
 .request-btn {
-  padding-top: 30px;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  margin-top: 30px;
+  color: #f26c4f;
+}
+.request-btn:hover {
+  color: #f26c4f;
 }
 
 .location {
   position: absolute;
-  right: -14px;
+  right: 0px;
   top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  min-height: 100%;
 }
 .location img {
-  height: 565px;
+  min-height: 100%;
 }
 
 .contact {
